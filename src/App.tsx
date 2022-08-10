@@ -1,14 +1,24 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import AdminFrame from './components/AdminFrame';
 import Dashboard from './pages/Dashboard';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="bg-body-bg w-full h-auto">
       <AdminFrame>
-        <Dashboard />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+        </BrowserRouter>
       </AdminFrame>
+      
     </div>
   );
 }

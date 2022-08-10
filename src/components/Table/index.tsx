@@ -46,7 +46,7 @@ const Table = () => {
             </div>
             <hr className='mb-3.5 mt-3'/>
             <div className='flex justify-center '>
-                <div className='border rounded-[2px] border-[#53BED2] py-3.5 px-14 text-14 '>
+                <div className='border rounded-[2px] border-[#53BED2] py-3.5 px-14 text-14 cursor-pointer'>
                     View more activity
                 </div>
             </div>
