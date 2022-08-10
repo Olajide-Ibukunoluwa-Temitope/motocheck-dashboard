@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <div className="bg-body-bg w-full h-screen">
+    <div className="bg-body-bg w-full h-auto">
       <AdminFrame>
         <Dashboard />
       </AdminFrame>

@@ -1,26 +1,38 @@
 import React from 'react';
-import OverviewItem from '../../components/OverviewItem';
+import OverviewSummary from '../../components/OverviewSummary';
 import SectionFrame from '../../components/SectionFrame';
-import { overviewItemData } from './data';
+import { actionsData, overviewItemData } from './data';
+import ActionsCard from '../../components/ActionsCard';
+import Table from '../../components/Table';
 
 const Dashboard: React.FC = () => {
   return (
     <div>
-        <SectionFrame title={'Overview'}>
-            <div className='bg-white rounded-md h-[158px] w-2/3 border border-[#E5E8ED]'>
-                <div className='h-full flex items-center'>
-                    {overviewItemData.map((item,index) => (
-                        <OverviewItem 
-                            key={index}
-                            isLastItem={(overviewItemData.length - 1) === index}
-                            value={item.value} 
-                            title={item.title} 
-                            change={item?.change} 
+        <div className='mb-[60px]'>
+            <SectionFrame title={'Overview'}>
+                <OverviewSummary overviewData={overviewItemData} />
+            </SectionFrame>
+        </div>
+        <div className='mb-[33px]'>
+            <SectionFrame title={'Key actions'}>
+                <div className='grid grid-cols-3 gap-[30px]'>
+                    {actionsData.map((value, idx) => (
+                        <ActionsCard 
+                            key={idx}
+                            title={value.title} 
+                            icon={value.icon}
+                            cardBg={value.cardBg}
+                            iconBg={value.iconBg}
                         />
                     ))}
                 </div>
-            </div>
-        </SectionFrame>
+            </SectionFrame>
+        </div>
+        <div>
+            <SectionFrame title={'Activity log'}>
+                <Table />
+            </SectionFrame>
+        </div>
     </div>
   )
 }
