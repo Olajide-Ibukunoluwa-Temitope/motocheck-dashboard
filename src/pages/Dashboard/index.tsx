@@ -15,7 +15,7 @@ const Dashboard: React.FC = () => {
         </div>
         <div className='mb-[33px]'>
             <SectionFrame title={'Key actions'}>
-                <div className='grid grid-cols-3 gap-[30px]'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-[30px]'>
                     {actionsData.map((value, idx) => (
                         <ActionsCard 
                             key={idx}

@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer utilities {
+  .navbar {
+    width: calc(100% - (87px));
+  }
+  .overview-item {
+    border-right-width: 0;
+    border-bottom-width: 1px;
+  }
+
+  @media screen and (min-width: 1024px){
+    .navbar {
+      width: calc(100% - (62px + 20%));
+    }
+    .overview-item {
+      border-right-width: 1px;
+      border-bottom-width: 0;
+    }
+  }
+}

@@ -5,7 +5,7 @@ const Table = () => {
     console.log(pseudoData)
     return (
         <div>
-            <div className='w-full bg-white border border-[#E5E8ED] rounded-md pl-5 pt-[33px] max-h-[450px] overflow-auto'>
+            <div className='w-full bg-white border border-[#E5E8ED] rounded-md pl-2 lg:pl-5 pt-[33px] max-h-[450px] overflow-auto'>
                 <table className="table-fixed w-full">
                     <thead className=''>
                         <tr>
@@ -27,15 +27,15 @@ const Table = () => {
                                 <tr className=' w-full' key={index}>
                                 <td className='border-b'>
                                     <div className='flex gap-2.5 items-center mb-[17px] mt-4'>
-                                        <div className='rounded-full w-[30px] h-[30px] bg-[#ECF0F7] text-12 flex justify-center items-center font-extrabold'>SC</div>
-                                        <p className='text-[#555555] text-14 font-semibold'>SLAAB Center 1</p>
+                                        <div className='rounded-full w-[30px] h-[30px] bg-[#ECF0F7] text-10 lg:text-12 flex justify-center items-center font-extrabold'>SC</div>
+                                        <p className='text-[#555555] text-12 lg:text-14 font-semibold'>SLAAB Center 1</p>
                                     </div>
                                 </td>
                                 <td className='border-b'>
-                                    <div className='text-[#53BED2] text-14 mb-[17px] mt-4'>Added 500 agents</div>
+                                    <div className='text-[#53BED2] text-12 lg:text-14 mb-[17px] mt-4'>Added 500 agents</div>
                                 </td>
                                 <td className='border-b'>
-                                    <div className='text-[#555555] text-14 mb-[17px] mt-4'>02/05/2019 - 10:30pm</div>
+                                    <div className='text-[#555555] text-12 lg:text-14 mb-[17px] mt-4'>02/05/2019 - 10:30pm</div>
                                 </td>
                             </tr>
                             
