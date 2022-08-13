@@ -5,7 +5,7 @@ import { OverviewItemProps } from './types';
 
 const OverviewItem: React.FC<OverviewItemProps> = ({value, title, change, isLastItem}) => {
   return (
-    <div className={`pl-9 lg:w-[220px] w-full ${!isLastItem ? 'overview-item pb-6' : ''} relative`}>
+    <div className={`pl-9 lg:w-[220px] w-full ${!isLastItem ? 'overview-item pb-6' : 'pb-6'} relative`}>
         <p className='flex items-center mb-2'>
             <span className='text-24 font-black mr-[17px]'>{value}</span>
             {change && (
