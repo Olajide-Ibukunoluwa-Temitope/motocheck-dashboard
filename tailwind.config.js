@@ -13,6 +13,7 @@ module.exports = {
         'lite': '0px 1px 3px rgba(0, 0, 0, 0.04)',
       },
       fontSize: {
+        '10': '10px',
         '12': '12px',
         '14': '14px',
         '16': '16px',
